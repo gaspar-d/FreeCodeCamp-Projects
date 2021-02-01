@@ -1,0 +1,136 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+/* BACKGROUND IMAGE & OPACITY */
+body {
+	overflow-x: hidden;
+	position: relative;
+	color: #f3f3f3;
+	height: 100vh;
+
+	background-image: url(./assets/background-003-medium.jpg);
+	background-position: top center;
+	background-attachment: fixed;
+
+	font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+		"Roboto", "Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+}
+
+img {
+	opacity: 0.8;
+	object-fit: cover;
+	position: absolute;
+	height: 1660px;
+}
+
+/* HEADER */
+header {
+	position: relative;
+	padding-top: 30px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#title {
+	padding: 8px;
+	font-weight: 400;
+}
+
+#description {
+	text-shadow: 1px 1px black;
+	font-style: italic;
+	font-weight: 200;
+}
+
+#survey-form {
+	/* position: relative; */
+	background-color: #252546;
+	opacity: 0.85;
+	border-radius: 4px;
+	margin: 30px;
+	padding: 30px 48px;
+	width: 730px;
+
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.input-field {
+	padding: 16px 0;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+label {
+	padding: 2px 0 8px;
+	font-size: 18px;
+}
+
+input,
+select {
+	border-radius: 4px;
+	padding: 10px;
+	border-color: inherit;
+}
+
+select {
+	font-size: 16px;
+	color: #48484c;
+}
+
+/* RADIO INPUTS */
+
+.radio-input {
+	display: flex;
+	align-items: center;
+}
+
+.radio-input > label {
+	padding: 4px 0 4px 8px;
+}
+
+input[type="radio"] {
+	width: 20px;
+	height: 20px;
+}
+
+/* CHECK INPUT */
+
+.check-input {
+	display: flex;
+	align-items: center;
+}
+
+.check-input > label {
+	padding: 4px 0 4px 8px;
+}
+
+input[type="checkbox"] {
+	width: 20px;
+	height: 20px;
+}
+
+textarea::placeholder {
+	font-size: 16px;
+	padding: 10px;
+	font-family: "Poppins";
+}
+
+input[type="submit"] {
+	color: #f3f3f3;
+	background-color: #38af65;
+	width: 100%;
+	border: none;
+	padding: 14px;
+	border-radius: 2px;
+	font-size: 16px;
+}
