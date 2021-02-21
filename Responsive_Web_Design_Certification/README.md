@@ -1,13 +1,13 @@
 # Responsive Web Design Projects
 
 ## Build a Tribute Page
-- Passed 10/10
+- Passed !
 
 ## Build a Survey Form
-- Not Passed
+- Passed !
 
 ## Build a Product Landing Page
-- Not Passed
+- Passed !
 
 ## Build a Technical Documentation Page
 - Not Passed
