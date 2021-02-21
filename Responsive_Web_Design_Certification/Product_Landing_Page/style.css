@@ -1,0 +1,252 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #eeeeee;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+		"Oxygen", "Ubuntu", "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Header and Navigation */
+#header {
+	background-color: #eeeeee;
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-height: 75px;
+	width: 100%;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header-img {
+	width: 300px;
+}
+
+#nav-bar {
+	width: 300px;
+	margin: 0 40px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: #000000;
+	cursor: pointer;
+}
+
+.nav-link:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+@media only screen and (max-width: 700px) {
+	#header {
+		flex-direction: column;
+	}
+}
+
+/* Page Container */
+
+#container {
+	max-width: 80vw;
+	margin: auto;
+}
+
+/* Title and Form */
+
+#title {
+	margin-top: 80px;
+	text-align: center;
+	font-weight: 500;
+	margin-bottom: 1rem;
+}
+
+#form__container {
+	width: 80vw;
+
+	display: flex;
+	justify-content: center;
+}
+
+#form {
+	/* border: solid 1px red; */
+	min-width: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#email {
+	height: 1.75rem;
+	width: 16rem;
+	margin-bottom: 0.75rem;
+}
+
+#submit {
+	height: 1.75rem;
+	width: 8rem;
+	border: none;
+	background-color: #f1c40f;
+	font-weight: bolder;
+}
+
+/* Features */
+
+#features__container {
+	margin: 5rem 0 4rem;
+	/* margin: auto; */
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	/* border: solid red 1px; */
+}
+
+#features__card {
+	padding: 2rem 0;
+	width: 70vw;
+
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-around;
+
+	/* border: solid red 1px; */
+}
+
+.icon {
+	/* border: solid 1px green; */
+	width: 4rem;
+	/* margin: auto; */
+	text-align: center;
+
+	color: #fe8c02;
+}
+
+.description {
+	/* border: solid 1px yellow; */
+
+	width: 60vw;
+}
+
+.description > p {
+	line-height: 1.25rem;
+	letter-spacing: 0.02rem;
+}
+
+/* Video */
+
+#demo__video {
+	display: flex;
+	justify-content: center;
+}
+
+/* Pricing Cards */
+
+#pricing__container {
+	margin-top: 4rem;
+	margin: 4rem auto;
+	max-width: 60rem;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+@media only screen and (max-width: 700px) {
+	#pricing__container {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	.pricing__card {
+		margin-bottom: 1rem;
+	}
+}
+
+.pricing__card {
+	border: solid #000000 0.1rem;
+	width: 15rem;
+	height: 19rem;
+}
+
+.pricing__card > .title {
+	background-color: #dddddd;
+	padding: 1rem;
+	text-align: center;
+	font-weight: 600;
+	margin-bottom: -0.3rem;
+}
+
+.pricing__description {
+	height: 15.7rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.pricing__description h2 {
+	margin-bottom: -1rem;
+}
+
+.pricing__specs {
+	line-height: 1.5rem;
+	font-size: 14px;
+	text-align: center;
+}
+
+.pricing__description > button {
+	background-color: #f1c40f;
+	border: none;
+	width: 6rem;
+	height: 2rem;
+}
+
+/* Footer */
+
+#footer {
+	background-color: #dddddd;
+	margin: auto;
+	width: 100vw;
+	/* overflow: visible; */
+	height: 5rem;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+@media only screen and (min-width: 1260px) {
+	#footer {
+		width: 80vw;
+	}
+}
+
+#footer > nav {
+	/* border: solid red 1px; */
+	margin-right: 2rem;
+	width: 12rem;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+footer > p {
+	/* border: solid green 1px; */
+	padding: 0.4rem;
+	margin-right: 1rem;
+	color: #444957;
+	font-size: 16px;
+	font-weight: 300;
+}
